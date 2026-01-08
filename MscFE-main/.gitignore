@@ -1,0 +1,6 @@
+# Web interface - no need to ignore, but keeping for reference
+# Add any build artifacts or temporary files here if needed
+
+# Ignore learning-in-public content
+linkedin-posts/
+forum-posts/

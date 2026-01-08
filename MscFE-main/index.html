@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSc Financial Engineering - Learning Portal</title>
+    <link rel="stylesheet" href="web-interface/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/github.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h1 class="logo">MScFE</h1>
+                <p class="subtitle">Learning Portal</p>
+            </div>
+            
+            <nav class="nav-menu" id="navMenu">
+                <!-- Navigation will be populated by JavaScript -->
+            </nav>
+            
+            <div class="sidebar-footer">
+                <button class="theme-toggle" id="themeToggle" title="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <div class="progress-indicator">
+                    <span class="progress-label">Progress</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content" id="mainContent">
+            <div class="content-header">
+                <button class="sidebar-toggle" id="sidebarToggle">☰</button>
+                <div class="breadcrumb" id="breadcrumb"></div>
+            </div>
+            
+            <div class="content-body" id="contentBody">
+                <div class="welcome-screen">
+                    <h1>Welcome to Your MScFE Learning Journey</h1>
+                    <p class="welcome-subtitle">Master of Science in Financial Engineering</p>
+                    <p class="welcome-text">Select a course or lesson from the sidebar to begin.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number" id="lessonsCompleted">0</div>
+                            <div class="stat-label">Lessons Completed</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" id="coursesInProgress">1</div>
+                            <div class="stat-label">Courses In Progress</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">2</div>
+                            <div class="stat-label">Years Duration</div>
+                        </div>
+                    </div>
+
+                    <div class="quick-links">
+                        <h2>Quick Links</h2>
+                        <div class="links-grid">
+                            <a href="#" class="quick-link" data-path="01-financial-markets/modules/credit-risk-and-financing/lesson-01-study-guide.md">
+                                <span class="link-icon">📚</span>
+                                <span class="link-text">Lesson 1: Saving and Borrowing</span>
+                            </a>
+                            <a href="#" class="quick-link" data-path="01-financial-markets/modules/credit-risk-and-financing/lesson-02-study-guide.md">
+                                <span class="link-icon">📚</span>
+                                <span class="link-text">Lesson 2: Counterparties and Credit Risk</span>
+                            </a>
+                            <a href="#" class="quick-link" data-path="01-financial-markets/modules/credit-risk-and-financing/lesson-01-practice-questions.md">
+                                <span class="link-icon">✏️</span>
+                                <span class="link-text">Lesson 1 Practice Questions</span>
+                            </a>
+                            <a href="#" class="quick-link" data-path="01-financial-markets/modules/credit-risk-and-financing/lesson-02-practice-questions.md">
+                                <span class="link-icon">✏️</span>
+                                <span class="link-text">Lesson 2 Practice Questions</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="web-interface/app.js"></script>
+</body>
+</html>
+
